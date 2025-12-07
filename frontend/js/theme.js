@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', ()=>{ const btn = document.getElementById('themeBtn'); if(!btn) return; btn.addEventListener('click', ()=>{ document.body.classList.toggle('dark'); }); });

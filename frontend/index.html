@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TEAM LAB — Login</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="header"><div class="brand"><img src="assets/logo.svg" alt="logo"><div class="title">TEAM LAB</div></div><div><button id="themeBtn" class="btn" style="padding:8px 10px">Toggle</button></div></header>
+<main class="container"><div class="card" style="max-width:760px;margin:40px auto">
+  <div class="hero"><div><h1 class="h1">Secure Patient Reports</h1><p class="small">Enter your Patient ID or scan your QR code received on WhatsApp.</p></div><div><img src="assets/logo.svg" style="height:84px;opacity:0.9"></div></div>
+  <div style="margin-top:18px;display:flex;gap:12px"><input id="id" class="input" placeholder="Patient ID"><button id="view" class="btn">View Results</button></div>
+</div><div class="footer">TEAM LAB — Laboratory Information System</div></main><script>document.getElementById('view').addEventListener('click',()=>{const id=document.getElementById('id').value.trim(); if(!id){alert('Enter Patient ID');return;} location.href='report.html?id='+encodeURIComponent(id);});</script></body></html>
